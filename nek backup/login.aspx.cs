@@ -18,10 +18,10 @@ namespace Projekt
         protected void Page_Load(object sender, EventArgs e)
         {
             //ali session že obstaja, drugače preusmeritev na index.aspx
-            /*if (Session["username"] != null)
+            if (Session["username"] != null)
             {
                 Response.Redirect("index.aspx");
-            }*/
+            }
         }
 
         public string CalculateMD5Hash(string input)
@@ -54,7 +54,7 @@ namespace Projekt
 
             //povezava z bazo Web.config
 
-            string constr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
+            string constr = ConfigurationManager.ConnectionStrings["baza"].ConnectionString;
 
             //deklaracija spremenljivke id
 
@@ -63,7 +63,7 @@ namespace Projekt
             using (MySqlConnection con = new MySqlConnection(constr))
             {
                 //Stored Procedures Workbench
-                using (MySqlCommand cmd = new MySqlCommand("login"))
+                using (MySqlCommand cmd = new MySqlCommand("user_login"))
                 {
                     using (MySqlDataAdapter sda = new MySqlDataAdapter())
                     {
@@ -79,21 +79,19 @@ namespace Projekt
                 }
 
                 string message = string.Empty;
-
+                
                 if (id == "nedela")
                 {
                     message = "Napačno uporabniško ime ali geslo!";
-                    Response.AddHeader("REFRESH", "1;URL=login.aspx");
                 }
                 else
                 {
-                    message = "Uspešna prijava! Čez nekaj trenutkov boste preusmerjeni na vašo stran.";
-                    Session["username"] = id;
-                    Response.AddHeader("REFRESH", "3;URL=prijavljen.aspx");
-                    //Response.Redirect("prijavljen.aspx");
+                    message = "Uspešna prijava!";
+                    /*Session["username"] = id;
+                    Response.Redirect("index.aspx");*/
                 }
 
-                Label3.Text = message;
+                login_button.Text = message;
             }
 
 
@@ -105,3 +103,4 @@ namespace Projekt
 
     }
 }
+

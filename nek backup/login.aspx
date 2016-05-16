@@ -56,23 +56,19 @@
 
     <form id="form_login" runat="server">
 
-        <asp:Label ID="Label1" runat="server" Text="Up. ime:"></asp:Label>&nbsp;
+
         <asp:TextBox ID="username1" runat="server">
 
         </asp:TextBox>&nbsp;<asp:RequiredFieldValidator ErrorMessage="Zahtevano" ForeColor="Red" ControlToValidate="username1"
                     runat="server" />
         <br /><br />
-        <asp:Label ID="Label2" runat="server" Text="Geslo:"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="password1" TextMode="Password" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ErrorMessage="Zahtevano" ForeColor="Red" ControlToValidate="password1"
                     runat="server" />
 
 
-        <br /><br />
+        <br />
         <asp:Button ID="login_button" runat="server" OnClick="login_button_Click" Text="Prijavi se" />
-        <br /><br />
-        <asp:Label ID="Label3" runat="server"></asp:Label>
-        
 
 
    </form>
@@ -87,7 +83,7 @@
 			<div>
 				<ul class="navigation">
 					<li>
-						<a href="index.aspx">Home</a>	</li>
+						<a href="index.aspx">Home	</li>
 					<li>
 						<a href="about.aspx">About</a>
 					</li>
