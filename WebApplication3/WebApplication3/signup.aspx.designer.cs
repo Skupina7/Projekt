@@ -7,28 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Projekt {
+namespace WebApplication3 {
     
     
-    public partial class login {
-        
-        /// <summary>
-        /// form_login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form_login;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+    public partial class signup {
         
         /// <summary>
         /// username1 control.
@@ -40,13 +22,22 @@ namespace Projekt {
         protected global::System.Web.UI.WebControls.TextBox username1;
         
         /// <summary>
-        /// Label2 control.
+        /// Firstname1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox Firstname1;
+        
+        /// <summary>
+        /// Lastname1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Lastname1;
         
         /// <summary>
         /// password1 control.
@@ -58,13 +49,31 @@ namespace Projekt {
         protected global::System.Web.UI.WebControls.TextBox password1;
         
         /// <summary>
-        /// login_button control.
+        /// ConfirmPassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_button;
+        protected global::System.Web.UI.WebControls.TextBox ConfirmPassword1;
+        
+        /// <summary>
+        /// email1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox email1;
+        
+        /// <summary>
+        /// signup_button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button signup_button;
         
         /// <summary>
         /// Label3 control.

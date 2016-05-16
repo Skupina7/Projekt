@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication3
 {
-    public partial class ChangePass : System.Web.UI.Page
+    public partial class prijavljen : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Redirect("index.aspx");
         }
     }
 }
