@@ -7,11 +7,17 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using System.IO;
+using System.Linq;
 
 namespace WebApplication3
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {
+        // Bind Data to Gridview
+
+
+        // Get files in folder
 
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
@@ -61,6 +67,7 @@ namespace WebApplication3
 
         protected void master_Page_PreLoad(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 // Set Anti-XSRF token

@@ -229,13 +229,6 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="LoggedIn.aspx.cs">
-      <DependentUpon>LoggedIn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoggedIn.aspx.designer.cs">
-      <DependentUpon>LoggedIn.aspx</DependentUpon>
-    </Compile>
     <Compile Include="profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,7 +315,6 @@
     <Content Include="Images\pic10.jpg" />
     <Content Include="Images\pic11.jpg" />
     <Content Include="Images\pic12.jpg" />
-    <Content Include="LoggedIn.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />

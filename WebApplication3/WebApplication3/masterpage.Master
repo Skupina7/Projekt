@@ -69,12 +69,12 @@
 				<div class="wrapper">
 					<div class="container" id="main">
 <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            
-            
+           
+
             
             </asp:ContentPlaceHolder>
 						<!-- Content -->
-						
+
 
 						
 					</div>
